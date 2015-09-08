@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="p7W-20-PYp" customClass="HistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p7W-20-PYp" id="0tv-TQ-rBn">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国四川省成都市人名南路30中国四川省成都市人名南路30" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDt-uL-IB9">
+                        <rect key="frame" x="37" y="17" width="275" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-06-03  05：52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdi-WA-3uS">
+                        <rect key="frame" x="200" y="48" width="112" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ch1-wz-Xwp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="8"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="Alm-fI-2wH"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouye_s" translatesAutoresizingMaskIntoConstraints="NO" id="emD-LO-94I">
+                        <rect key="frame" x="8" y="16" width="21" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="Ow5-UY-3Ua"/>
+                            <constraint firstAttribute="width" constant="26" id="fvO-Rh-AJY"/>
+                            <constraint firstAttribute="height" constant="27" id="kCq-MH-fA6"/>
+                            <constraint firstAttribute="height" constant="23" id="sRm-jj-pV0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fvO-Rh-AJY"/>
+                                <exclude reference="kCq-MH-fA6"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="DDt-uL-IB9" secondAttribute="trailing" constant="8" id="2oI-Kx-v8o"/>
+                    <constraint firstItem="emD-LO-94I" firstAttribute="centerY" secondItem="DDt-uL-IB9" secondAttribute="centerY" constant="-6.5" id="3pq-oB-okh"/>
+                    <constraint firstItem="DDt-uL-IB9" firstAttribute="leading" secondItem="emD-LO-94I" secondAttribute="trailing" constant="8" id="G6H-SD-Dqt"/>
+                    <constraint firstItem="Ch1-wz-Xwp" firstAttribute="top" secondItem="0tv-TQ-rBn" secondAttribute="top" id="Jnc-gd-Ba1"/>
+                    <constraint firstAttribute="bottom" secondItem="qdi-WA-3uS" secondAttribute="bottom" constant="1" id="VMj-AN-1nc"/>
+                    <constraint firstAttribute="trailing" secondItem="Ch1-wz-Xwp" secondAttribute="trailing" id="caB-2L-mUM"/>
+                    <constraint firstItem="Ch1-wz-Xwp" firstAttribute="leading" secondItem="emD-LO-94I" secondAttribute="trailing" id="dDV-wN-2kO"/>
+                    <constraint firstItem="Ch1-wz-Xwp" firstAttribute="leading" secondItem="0tv-TQ-rBn" secondAttribute="leading" id="gTw-Ux-Nes"/>
+                    <constraint firstItem="emD-LO-94I" firstAttribute="leading" secondItem="0tv-TQ-rBn" secondAttribute="leading" constant="8" id="hsc-3e-RfQ"/>
+                    <constraint firstItem="emD-LO-94I" firstAttribute="top" secondItem="0tv-TQ-rBn" secondAttribute="top" constant="16" id="wHz-v9-kJr"/>
+                    <constraint firstAttribute="trailing" secondItem="qdi-WA-3uS" secondAttribute="trailing" constant="8" id="wTJ-Yh-YMx"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="dDV-wN-2kO"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="291" y="212.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shouye_s" width="23" height="23"/>
+    </resources>
+</document>

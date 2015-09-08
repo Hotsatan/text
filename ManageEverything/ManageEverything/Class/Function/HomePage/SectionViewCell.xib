@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q5X-9X-8Sg" customClass="SectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="路况类型" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phg-Xu-bPU">
+                    <rect key="frame" x="22" y="45" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市区路况" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwE-Ha-IpP">
+                    <rect key="frame" x="228" y="45" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_sc_item_type" translatesAutoresizingMaskIntoConstraints="NO" id="94M-hb-p8D">
+                    <rect key="frame" x="301" y="43" width="14" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="3QR-Dh-aw4"/>
+                        <constraint firstAttribute="height" constant="24" id="Ix6-7n-zYu"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="r_line" translatesAutoresizingMaskIntoConstraints="NO" id="U54-xp-SF2">
+                    <rect key="frame" x="0.0" y="110" width="320" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="An9-wE-cuE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-ES-7SB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressd:" destination="q5X-9X-8Sg" eventType="touchUpInside" id="LTS-QF-xng"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="94M-hb-p8D" secondAttribute="centerY" id="2d9-j3-aeO"/>
+                <constraint firstAttribute="trailing" secondItem="g8W-ES-7SB" secondAttribute="trailing" id="3Vv-iV-BE5"/>
+                <constraint firstAttribute="bottom" secondItem="U54-xp-SF2" secondAttribute="bottom" id="F38-cY-h2d"/>
+                <constraint firstAttribute="trailing" secondItem="U54-xp-SF2" secondAttribute="trailing" id="Jxn-kj-aSj"/>
+                <constraint firstItem="94M-hb-p8D" firstAttribute="leading" secondItem="dwE-Ha-IpP" secondAttribute="trailing" constant="5" id="Ome-HH-O2z">
+                    <variation key="heightClass=regular-widthClass=compact" constant="9"/>
+                </constraint>
+                <constraint firstItem="g8W-ES-7SB" firstAttribute="top" secondItem="q5X-9X-8Sg" secondAttribute="top" id="RE9-ef-eUE"/>
+                <constraint firstItem="94M-hb-p8D" firstAttribute="centerY" secondItem="dwE-Ha-IpP" secondAttribute="centerY" id="UKN-tw-s7W"/>
+                <constraint firstItem="94M-hb-p8D" firstAttribute="leading" secondItem="dwE-Ha-IpP" secondAttribute="trailing" constant="8" id="WvF-6c-qTg"/>
+                <constraint firstItem="phg-Xu-bPU" firstAttribute="leading" secondItem="q5X-9X-8Sg" secondAttribute="leading" constant="22" id="bUc-Sw-b96">
+                    <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="dwE-Ha-IpP" secondAttribute="trailing" constant="22" id="deQ-Lg-swW"/>
+                <constraint firstItem="U54-xp-SF2" firstAttribute="leading" secondItem="q5X-9X-8Sg" secondAttribute="leading" id="dpm-dE-cQt"/>
+                <constraint firstAttribute="centerY" secondItem="phg-Xu-bPU" secondAttribute="centerY" id="r8H-Ul-Fz7"/>
+                <constraint firstAttribute="bottom" secondItem="g8W-ES-7SB" secondAttribute="bottom" id="u47-LB-KxB"/>
+                <constraint firstItem="g8W-ES-7SB" firstAttribute="leading" secondItem="q5X-9X-8Sg" secondAttribute="leading" id="uZb-Zg-I4h"/>
+                <constraint firstAttribute="trailing" secondItem="94M-hb-p8D" secondAttribute="trailing" constant="5" id="vWs-dm-5Nf">
+                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                </constraint>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="deQ-Lg-swW"/>
+                    <exclude reference="WvF-6c-qTg"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="botemImage" destination="U54-xp-SF2" id="vd6-uc-Wbi"/>
+                <outlet property="scalImage" destination="94M-hb-p8D" id="ksp-AD-yHY"/>
+                <outlet property="sclImage_Height_Constraint" destination="Ix6-7n-zYu" id="SCy-Zi-V0g"/>
+                <outlet property="sclImage_width_Constraint" destination="3QR-Dh-aw4" id="rdb-iF-emg"/>
+                <outlet property="sectionLabel" destination="dwE-Ha-IpP" id="hyT-dR-dBl"/>
+                <outlet property="tyepSectionLable" destination="phg-Xu-bPU" id="1MC-JT-Fq7"/>
+            </connections>
+            <point key="canvasLocation" x="447" y="-192"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="car_sc_item_type" width="27" height="47"/>
+        <image name="r_line" width="316" height="1"/>
+    </resources>
+</document>
